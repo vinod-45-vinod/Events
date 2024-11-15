@@ -1,0 +1,61 @@
+/* src/Components/Events.css */
+
+.events-page {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 40px;
+    text-align: center;
+    min-height: 100vh; /* Ensure it takes up full screen */
+  }
+  
+  .events-title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+  }
+  
+  .events-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .event-item {
+    background-color: #333; /* Dark gray background for event items */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .event-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .event-item h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .event-item p {
+    font-size: 1rem;
+    color: #ccc; /* Slightly lighter text */
+  }
+  
+  @media (max-width: 768px) {
+    .events-container {
+      grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .events-container {
+      grid-template-columns: 1fr; /* Single column on mobile screens */
+    }
+  }
+  
